@@ -5,3 +5,4 @@
 - [Linear Regression](https://github.com/y0ubat/MachineLearning_Study/tree/master/Linear%20Regression)
 - [Logistic Regression](https://github.com/y0ubat/MachineLearning_Study/tree/master/Logistic%20Classification)
 - [Softmax Regression](https://github.com/y0ubat/MachineLearning_Study/tree/master/Softmax%20Classification)
+- [Image Classification](https://github.com/y0ubat/MachineLearning_Study/tree/master/04%20-%20Image%20Classification%0A)
