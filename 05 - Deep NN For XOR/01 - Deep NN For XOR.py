@@ -45,7 +45,7 @@ with tf.name_scope('cost') as scope:
     cost_summ = tf.scalar_summary("cost", cost)
 
 with tf.name_scope('train') as scope:
-    rate = tf.Variable(0.1)
+    rate = tf.Variable(0.005)
     optimizer = tf.train.GradientDescentOptimizer(rate)
     train = optimizer.minimize(cost)
 
@@ -76,7 +76,7 @@ with tf.Session() as sess:
     writer = tf.train.SummaryWriter("./logs/xor_logs", sess.graph)
     merged = tf.merge_all_summaries()
 
-    for step in range(10000):
+    for step in range(30000):
         sess.run(train, feed_dict={X: x_data, Y: y_data})
         if step % 1000 == 0:
             summary = sess.run(merged, feed_dict={X: x_data, Y: y_data})
