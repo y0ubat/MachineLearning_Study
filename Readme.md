@@ -7,3 +7,4 @@
 - [Softmax Regression](https://github.com/y0ubat/MachineLearning_Study/tree/master/03%20-%20Softmax%20Classification)
 - [Image Classification](https://github.com/y0ubat/MachineLearning_Study/tree/master/04%20-%20Image%20Classification%0A)
 - [Deep NN For XOR](https://github.com/y0ubat/MachineLearning_Study/tree/master/05%20-%20Deep%20NN%20For%20XOR)
+- [Deep Leaning For MINST](https://github.com/y0ubat/MachineLearning_Study/tree/master/06%20-%20Deep%20Learning%20For%20MNIST)
