@@ -28,15 +28,14 @@ optimizer = tf.train.GradientDescentOptimizer(learning_rate).minimize(cost)
 init = tf.initialize_all_variables()
 
 with tf.Session() as sess:
-    sess.run(init)
 
     saver = tf.train.Saver()
 
     if tf.gfile.Exists(checkpoint_dir + '/model.ckpt'):
         saver.restore(sess, checkpoint_dir + '/model.ckpt')
+    else:
+        sess.run(init)
 
-
-    ckpt = tf.train.get_checkpoint_state(checkpoint_dir)
 
     for epoch in range(training_epochs):
         avg_cost = 0.
