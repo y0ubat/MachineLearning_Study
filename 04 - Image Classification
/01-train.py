@@ -25,7 +25,6 @@ learning_rate = 0.1
 cost = tf.reduce_mean(-tf.reduce_sum(Y*tf.log(activation), reduction_indices=1))
 optimizer = tf.train.GradientDescentOptimizer(learning_rate).minimize(cost)
 
-init = tf.initialize_all_variables()
 
 with tf.Session() as sess:
 
@@ -34,6 +33,7 @@ with tf.Session() as sess:
     if tf.gfile.Exists(checkpoint_dir + '/model.ckpt'):
         saver.restore(sess, checkpoint_dir + '/model.ckpt')
     else:
+        init = tf.initialize_all_variables()
         sess.run(init)
 
 
